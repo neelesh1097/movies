@@ -1,0 +1,228 @@
+/* Home Page Styles - Professional Movie Website */
+.home {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.section-header h1 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #ffffff, #e50914);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  margin: 20px 0;
+  border-radius: 4px;
+  border: 1px solid #ffcdd2;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Responsive Design */
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .home {
+    padding: 40px 30px;
+  }
+  
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+  }
+  
+  .section-header h1 {
+    font-size: 42px;
+  }
+  
+  .section-header p {
+    font-size: 18px;
+  }
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+  .home {
+    padding: 25px 20px;
+  }
+  
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  
+  .section-header h1 {
+    font-size: 32px;
+  }
+  
+  .section-header p {
+    font-size: 15px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .home {
+    padding: 20px 15px;
+  }
+  
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 15px 0;
+  }
+  
+  .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .section-header h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .section-header p {
+    font-size: 14px;
+    max-width: 500px;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+  .home {
+    padding: 15px 10px;
+    margin-top: 80px; /* Add top margin to account for search bar below navbar */
+  }
+  
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px 0;
+  }
+  
+  .section-header {
+    margin-bottom: 30px;
+  }
+  
+  .section-header h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .section-header p {
+    font-size: 13px;
+    max-width: 400px;
+  }
+  
+  .error-message {
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 14px;
+  }
+  
+  .loading {
+    padding: 30px 20px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  .home {
+    padding: 10px 8px;
+    margin-top: 70px; /* Adjust for smaller search bar */
+  }
+  
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    padding: 8px 0;
+  }
+  
+  .section-header {
+    margin-bottom: 25px;
+  }
+  
+  .section-header h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .section-header p {
+    font-size: 12px;
+    max-width: 300px;
+  }
+  
+  .error-message {
+    padding: 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  
+  .loading {
+    padding: 25px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+  .home {
+    padding: 8px 5px;
+    margin-top: 65px; /* Adjust for very small screens */
+  }
+  
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    padding: 5px 0;
+  }
+  
+  .section-header h1 {
+    font-size: 20px;
+  }
+  
+  .section-header p {
+    font-size: 11px;
+    max-width: 250px;
+  }
+}
